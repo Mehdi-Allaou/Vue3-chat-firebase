@@ -1,0 +1,72 @@
+@import './variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&display=swap');
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  background: var(--clr-main-bg);
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  background: #fff;
+  margin: 2rem auto;
+  border-radius: var(--border-radius);
+  box-shadow: 2px 4px 6px #04043f31;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: .7rem 1.3rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: background 90ms ease-out;
+}
+.btn-primary {
+  background: var(--clr-primary);
+  color: #fff;
+}
+.btn:hover::before {
+  background: #ffffff13;
+}
+.btn:active::before {
+  background: #0000001e;
+}
+.error {
+  color: #9e2828;
+  font-size: .9rem;
+  padding: .3rem;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--clr-chat-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 6px;
+  border: 3px solid var(--clr-chat-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}

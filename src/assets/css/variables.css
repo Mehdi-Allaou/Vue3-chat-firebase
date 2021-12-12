@@ -1,0 +1,9 @@
+:root {
+  --clr-main-bg: #ebe8d8;
+  --clr-primary: #1037fb;
+  --clr-border: #dbdbdb;
+  --clr-chat-bg: #f0f0f0;
+  --clr-message-own: #bcfcc9;
+  --clr-message-others: #ebd1ac;
+  --border-radius: 20px;
+}
